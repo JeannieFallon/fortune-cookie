@@ -24,8 +24,9 @@ def getRandomFortune():
         "Cognoscetis veritatam, et veritas vos liberabit.",
         "Carpe noctem!"
     ]
-    index = random.randint(0,2)
-    return fortunes[index]
+    #index = random.randint(0,2)
+    #return fortunes[index]
+    return random.choice(fortunes)
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
